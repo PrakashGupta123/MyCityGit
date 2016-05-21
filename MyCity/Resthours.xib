@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestHoursCell" id="95c-hJ-qSj" customClass="RestHoursCell">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="95c-hJ-qSj" id="GxA-gu-SZC">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g14-J6-Ivr">
+                        <rect key="frame" x="17" y="7" width="99" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="g14-J6-Ivr" secondAttribute="height" multiplier="33:5" id="riO-hP-bNY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckt-6c-vy8">
+                        <rect key="frame" x="184" y="7" width="47" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ckt-6c-vy8" secondAttribute="height" multiplier="47:15" id="IvH-0O-FPW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ckt-6c-vy8" firstAttribute="leading" secondItem="g14-J6-Ivr" secondAttribute="trailing" constant="68" id="3ty-OH-LXB"/>
+                    <constraint firstAttribute="bottom" secondItem="Ckt-6c-vy8" secondAttribute="bottom" constant="7" id="EcO-zJ-FJs"/>
+                    <constraint firstItem="Ckt-6c-vy8" firstAttribute="top" secondItem="GxA-gu-SZC" secondAttribute="top" constant="7" id="FgE-D9-HVD"/>
+                    <constraint firstItem="g14-J6-Ivr" firstAttribute="top" secondItem="GxA-gu-SZC" secondAttribute="top" constant="7" id="UXv-RR-XSi"/>
+                    <constraint firstItem="g14-J6-Ivr" firstAttribute="leading" secondItem="GxA-gu-SZC" secondAttribute="leading" constant="17" id="sh9-OS-g2x"/>
+                    <constraint firstAttribute="bottom" secondItem="g14-J6-Ivr" secondAttribute="bottom" constant="7" id="vGA-1y-9bW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblRestHours" destination="g14-J6-Ivr" id="peW-4x-sgZ"/>
+                <outlet property="lblRestHoursPrice" destination="Ckt-6c-vy8" id="GBC-rg-han"/>
+            </connections>
+            <point key="canvasLocation" x="156.5" y="237"/>
+        </tableViewCell>
+    </objects>
+</document>
